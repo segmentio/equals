@@ -6,7 +6,6 @@
     "@jkroso/type": "2"
   },
   "devDependencies": {
-    "serve": "jkroso/serve",
     "future-node": "*",
     "hydro-html": "*",
     "hydro-chai": "*",
@@ -15,10 +14,26 @@
     "hydro": "*",
     "chai": "*"
   },
-  "transpile": [["{index,test/*}.js", "!sourcegraph/babel->js", {"stage": 2}]],
+  "transpile": [
+    [
+      "{index,test/*}.js",
+      "!sourcegraph/babel->js",
+      {
+        "stage": 2
+      }
+    ]
+  ],
   "repository": "git://github.com/jkroso/equals.git",
-  "keywords": ["equality", "equal", "equivalent", "equivalence", "="],
-  "files": ["index.js"],
+  "keywords": [
+    "equality",
+    "equal",
+    "equivalent",
+    "equivalence",
+    "="
+  ],
+  "files": [
+    "index.js"
+  ],
   "author": "Jake Rosoman",
   "license": "MIT"
 }
